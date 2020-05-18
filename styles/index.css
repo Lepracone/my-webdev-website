@@ -7,6 +7,10 @@ header{
     height: 100vh;
 }
 
+.invisible{
+    display: none;
+}
+
 /*---Navbar---*/
 .navbar-container{
     display:flex;
@@ -17,13 +21,13 @@ header{
  
 .navbar-icons{
     color: #66FCF1;
-    font-size: 25px;
+    font-size: 30px;
     margin-right: 5px;
 }
 .navbar-links a {
     color: #66FCF1;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     margin-left:10px
 }
 /*---Jumbotron---*/
@@ -36,16 +40,18 @@ header{
 
 .jumbotron-message h4 {
     font-size: 50px;
-    margin:40px auto;
+    margin:100px auto 20px;
     color: #66FCF1;
 }
 
 .button-links {
+    font-size: 1.3em;
     text-decoration: none;
     border: 2px solid #66FCF1;
     color: #C5C6C7;
     border-radius:3px;
-    padding:4px 6px;
+    padding:10px 6px;
+    margin: 0px 10px;
 }
 
 .about-me {
@@ -56,18 +62,79 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.about-me-header {
+    font-size: 1.6rem;
+}
+.about-me-text{
+    font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.highlight{
+    font-size: 1.2em;
+    color:#e31b6d
+
+}
 /*---Skills---*/
 
 #skills{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote-text{
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.quote-author{
+    font-weight: 800;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .section-title{
     font-size: 3rem;
 }
-.skills-grid{
+
+.skills-buttons-container{
+    margin-bottom: 40px;
+}
+
+.skills-button{
+    background: white;
+    border-radius: 3px;
+    border: 3px solid #1F2833;
+    padding:5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.selected-button{
+    background: #1F2833;
+    color: white;
+    opacity: unset;
+    padding: 8px 12px;
+    transition: padding 0.4s, background 0.4s;  
+}
+.selected-button:focus{
+    outline: none;
+
+}
+
+#skills-grid{
     display: grid;
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: 100px 50px;
@@ -75,9 +142,49 @@ header{
     text-align: center;
 }
 
-.skills-grid img{
+#design-skills-grid{
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr) 3fr;
+    grid-template-rows: 100px 50px;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+#design-skills-grid div{
+    margin:0 30px;
+}
+
+.skills-logo{
     height: 80px;
 }
+
+.photoshop-icon{
+    grid-column-start: 2;
+}
+
+.illustrator-icon{
+    grid-column-start: 3;
+}
+
+.lightroom-icon{
+    grid-column-start: 4;
+}
+
+.photoshop{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.illustrator{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.lightroom{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
 .skills-container{
     margin-top: 150px;
     display: flex;
@@ -161,3 +268,116 @@ footer{
     margin-right: 5px;
     color: #66FCF1;
 }
+
+/*---Animation--*/
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+/*Underline from left - Links*/ 
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #66FCF1;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+/* Hang - Social Icons*/
+@-webkit-keyframes hvr-hang {
+    0% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    50% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    100% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  }
+  @keyframes hvr-hang {
+    0% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    50% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    100% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  }
+  @-webkit-keyframes hvr-hang-sink {
+    100% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  }
+  @keyframes hvr-hang-sink {
+    100% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  }
+  .hvr-hang {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+    -webkit-animation-name: hvr-hang-sink, hvr-hang;
+    animation-name: hvr-hang-sink, hvr-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }

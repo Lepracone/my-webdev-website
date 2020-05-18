@@ -14,13 +14,13 @@
     <header>
         <nav class="navbar-container">
             <div class="navbar-icons-container">
-                <a class="navbar-icons" href="http://github.com/Lepracone" target="_blank" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
-                <a class="navbar-icons" href="www.linkedin.com/in/ricardo-sousa-ferreira" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+                <a class="navbar-icons hvr-hang " href="http://github.com/Lepracone" target="_blank" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
+                <a class="navbar-icons hvr-hang " href="www.linkedin.com/in/ricardo-sousa-ferreira" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
             </div>
             <div class="navbar-links">
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contacts">Contacts</a>
+                <a class="hvr-underline-from-left" href="#skills">Skills</a>
+                <a class="hvr-underline-from-left" href="#portfolio">Portfolio</a>
+                <a class="hvr-underline-from-left" href="#contacts">Contacts</a>
             </div>
         </nav>
         <div class="jumbotron">
@@ -28,39 +28,62 @@
                 <h4>{ Web Developer }</h4>
 
             </div>
+
+            <div class="about-me">
+                <h3 class="about-me-header">Olá, sou o <span class="highlight">Ricardo</span>. Prazer em conhecer-te.</h3>
+                <p class="about-me-text">Desde sempre procurei <span class="highlight">evoluir</span> enquanto profissional, focado em <span class="highlight">aprender</span> tudo o que os desafios e oportunidades que surgiram me podiam ensinar. Após vários anos em áreas como design, gestão e telecomunicações, chegou a hora de fazer o que sempre quis, <span class="highlight">programar</span>. </p>
+            </div>
+    
             <div class="jumbotron-links">
-                <a class="button-links" href="#skills">My Skills</a>
-                <a class="button-links" href="#portfolio">Portfolio</a>
+                <a class="button-links hvr-grow" href="#skills">My Skills</a>
+                <a class="button-links hvr-grow" href="#portfolio">Portfolio</a>
             </div>
         </div>
-        <div class="about-me">
-            <h3>Olá, sou o Ricardo. Prazer em conhecer-te.</h3>
-            <p>Escrever algo sobre mim aqui</p>
-        </div>
+        
     </header>
     <main>
         <div class="skills-container">
             <div id="skills">  
                 <h1 class="section-title">[ Skills ]</h1>
-                    <div class="skills-grid">
-                        <div><img src="./public/images/html5.png"></div>
-                        <div><img src="./public/images/css3.png"></div>
-                        <div><img src="./public/images/javascript.png"></div>
-                        <div><img src="./public/images/mongodb.png"></div>
-                        <div><img src="./public/images/express.png"></div>
-                        <div><img src="./public/images/react.png"></div>
-                        <div><img src="./public/images/nodejs.png"></div>
-                        <div><img src="./public/images/jquery.png"></div>
-                        <div><img src="./public/images/github.png"></div>
-                        <div>HTML</div>
-                        <div>CSS</div>
-                        <div>Javascript</div>
-                        <div>MongoDB</div>
-                        <div>Express</div>
-                        <div>REACT</div>
-                        <div>NodeJS</div>
-                        <div>JQuery</div>
-                        <div>Github</div>
+                <div class="quote">
+                    <div class="quote-text">"Knowledge is of two kinds. We know a subject ourselves, or we know where we can find information upon it."</div>
+                    <div class="quote-author">Samuel Johnson</div>
+                </div>
+                    <div class="skills-buttons-container">
+                        <button id="development-button" class="selected-button skills-button">Development</button>
+                        <button id="design-button" class="skills-button">Design</button>
+                    </div>
+                    <div id="skills-grid-container">
+                        <div id="skills-grid">
+                            <div><img class="skills-logo" src="./public/images/html5.png"></div>
+                            <div><img class="skills-logo"src="./public/images/css3.png"></div>
+                            <div><img class="skills-logo"src="./public/images/javascript.png"></div>
+                            <div><img class="skills-logo"src="./public/images/mongodb.png"></div>
+                            <div><img class="skills-logo"src="./public/images/express.png"></div>
+                            <div><img class="skills-logo"src="./public/images/react.png"></div>
+                            <div><img class="skills-logo"src="./public/images/nodejs.png"></div>
+                            <div><img class="skills-logo"src="./public/images/jquery.png"></div>
+                            <div><img class="skills-logo"src="./public/images/github.png"></div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>Javascript</div>
+                            <div>MongoDB</div>
+                            <div>Express</div>
+                            <div>REACT</div>
+                            <div>NodeJS</div>
+                            <div>JQuery</div>
+                            <div>Github</div>
+                        </div>
+                    </div>
+                    <div id="design-skills-container" class="invisible">
+                        <div id="design-skills-grid">
+                            <div class="photoshop-icon"><img class="skills-logo" src="./public/images/photoshop.png"></div>
+                            <div class="illustrator-icon"><img class="skills-logo" src="./public/images/illustrator.png"></div>
+                            <div class="lightroom-icon"><img class="skills-logo" src="./public/images/lightroom.png"></div>
+                            <div class="photoshop">Photoshop</div>
+                            <div class="illustrator">Illustrator</div>
+                            <div class="lightroom">Lightroom</div>
+                        </div>
                     </div>
             </div>
         </div>
@@ -171,6 +194,8 @@
         </div>
         
     </footer>
-    
+
+    <script type="text/javascript" src="app.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
