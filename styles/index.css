@@ -1,11 +1,19 @@
-html{
+html, body{
     font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;  
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
 }
+
+
 header{
     background-color:#1F2833;
     background-size: cover;
     height: 100vh;
 }
+
+
 
 .invisible{
     display: none;
@@ -45,6 +53,15 @@ header{
 }
 
 .button-links {
+    text-decoration: none;
+    border: 2px solid #66FCF1;
+    color: #C5C6C7;
+    border-radius:3px;
+    padding:2px 6px;
+    margin: 0px 10px;
+}
+
+.button-links-jumbotron {
     font-size: 1.3em;
     text-decoration: none;
     border: 2px solid #66FCF1;
@@ -94,6 +111,7 @@ header{
 .quote-text{
     font-style: italic;
     font-size: 1.3em;
+    margin:20px;
 }
 
 .quote-author{
@@ -135,54 +153,30 @@ header{
 }
 
 #skills-grid{
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: 100px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0 10vw; 
     text-align: center;
 }
 
+#skills-grid div{
+    margin: 20px 8px;
+}
+
 #design-skills-grid{
-    display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr) 3fr;
-    grid-template-rows: 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 10vw;
     text-align: center;
 }
 
 #design-skills-grid div{
-    margin:0 30px;
+    margin: 20px 8px;
 }
 
 .skills-logo{
     height: 80px;
-}
-
-.photoshop-icon{
-    grid-column-start: 2;
-}
-
-.illustrator-icon{
-    grid-column-start: 3;
-}
-
-.lightroom-icon{
-    grid-column-start: 4;
-}
-
-.photoshop{
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.illustrator{
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
-
-.lightroom{
-    grid-column-start: 4;
-    grid-row-start: 2;
 }
 
 .skills-container{
@@ -209,7 +203,8 @@ header{
 .project-boxes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    max-width: 1300px;
     
 }
 
@@ -381,3 +376,23 @@ footer{
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
   }
+
+  /*--- @media ---*/
+  @media all and (max-width: 450px) {
+    header{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .jumbotron-message h4{
+        font-size: 1.6em;
+        margin-top: 30px;
+    }
+
+    .section-title{
+        font-size: 1.8em;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+}

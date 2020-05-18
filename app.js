@@ -22,3 +22,4 @@ function toogleSkills(){
     designSkillsGrid.classList.toggle("invisible");
     designButton.classList.toggle("selected-button");
 }
+

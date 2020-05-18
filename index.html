@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/8a2f7b5f47.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
@@ -35,14 +36,14 @@
             </div>
     
             <div class="jumbotron-links">
-                <a class="button-links hvr-grow" href="#skills">My Skills</a>
-                <a class="button-links hvr-grow" href="#portfolio">Portfolio</a>
+                <a class="button-links-jumbotron hvr-grow" href="#skills">My Skills</a>
+                <a class="button-links-jumbotron hvr-grow" href="#portfolio">Portfolio</a>
             </div>
         </div>
         
     </header>
     <main>
-        <div class="skills-container">
+        <div class="skills-container" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" >
             <div id="skills">  
                 <h1 class="section-title">[ Skills ]</h1>
                 <div class="quote">
@@ -55,39 +56,30 @@
                     </div>
                     <div id="skills-grid-container">
                         <div id="skills-grid">
-                            <div><img class="skills-logo" src="./public/images/html5.png"></div>
-                            <div><img class="skills-logo"src="./public/images/css3.png"></div>
-                            <div><img class="skills-logo"src="./public/images/javascript.png"></div>
-                            <div><img class="skills-logo"src="./public/images/mongodb.png"></div>
-                            <div><img class="skills-logo"src="./public/images/express.png"></div>
-                            <div><img class="skills-logo"src="./public/images/react.png"></div>
-                            <div><img class="skills-logo"src="./public/images/nodejs.png"></div>
-                            <div><img class="skills-logo"src="./public/images/jquery.png"></div>
-                            <div><img class="skills-logo"src="./public/images/github.png"></div>
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>Javascript</div>
-                            <div>MongoDB</div>
-                            <div>Express</div>
-                            <div>REACT</div>
-                            <div>NodeJS</div>
-                            <div>JQuery</div>
-                            <div>Github</div>
+                            <div><img class="skills-logo" src="./public/images/html5.png"><div>HTML</div></div>
+                            <div><img class="skills-logo"src="./public/images/css3.png"><div>CSS</div></div>
+                            <div><img class="skills-logo"src="./public/images/javascript.png"><div>Javascript</div></div>
+                            <div><img class="skills-logo"src="./public/images/mongodb.png"><div>MongoDB</div></div>
+                            <div><img class="skills-logo"src="./public/images/express.png"><div>Express</div></div>
+                            <div><img class="skills-logo"src="./public/images/react.png"><div>REACT</div></div>
+                            <div><img class="skills-logo"src="./public/images/nodejs.png"><div>NodeJS</div></div>
+                            <div><img class="skills-logo"src="./public/images/jquery.png"><div>JQuery</div></div>
+                            <div><img class="skills-logo"src="./public/images/github.png"><div>Github</div></div> 
                         </div>
                     </div>
                     <div id="design-skills-container" class="invisible">
                         <div id="design-skills-grid">
-                            <div class="photoshop-icon"><img class="skills-logo" src="./public/images/photoshop.png"></div>
-                            <div class="illustrator-icon"><img class="skills-logo" src="./public/images/illustrator.png"></div>
-                            <div class="lightroom-icon"><img class="skills-logo" src="./public/images/lightroom.png"></div>
-                            <div class="photoshop">Photoshop</div>
-                            <div class="illustrator">Illustrator</div>
-                            <div class="lightroom">Lightroom</div>
+                            <div class="photoshop-icon"><img class="skills-logo" src="./public/images/photoshop.png"><div>Photoshop</div></div>
+                            <div class="illustrator-icon"><img class="skills-logo" src="./public/images/illustrator.png"><div>Illustrator</div></div>
+                            <div class="lightroom-icon"><img class="skills-logo" src="./public/images/lightroom.png"><div>Lightroom</div></div>
+                            
+                            
+                            
                         </div>
                     </div>
             </div>
         </div>
-        <div id="portfolio">
+        <div id="portfolio" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
             <h1 class="section-title">&lt; Portfolio &gt;</h1>
             <div class="project-boxes-container">
 
@@ -180,22 +172,29 @@
         
     </main>
     <footer>
-        <div id="contacts">
-            <h1 class="section-title">( CONTACT ME )</h1>
-            <h4>r.sousa21@hotmail.com</h4>
-            <div>
-                <a class="footer-icons" href="http://github.com/Lepracone" target="_blank" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
-                <a class="footer-icons" href="www.linkedin.com/in/ricardo-sousa-ferreira" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div id="contacts" >
+                <h1 class="section-title">( CONTACT ME )</h1>
+                <h4>r.sousa21@hotmail.com</h4>
+                <div>
+                    <a class="footer-icons" href="http://github.com/Lepracone" target="_blank" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
+                    <a class="footer-icons" href="www.linkedin.com/in/ricardo-sousa-ferreira" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="footer-message">
-            <span>Ricardo Ferreira <span>2020</span></span>
-            
+            <div class="footer-message">
+                <span>Ricardo Ferreira <span>2020</span></span>
+                
+            </div>
         </div>
         
     </footer>
 
     <script type="text/javascript" src="app.js"></script>
-    <script>AOS.init();</script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 </html>
