@@ -223,6 +223,8 @@ header{
 
 .project-box-image {
     border-radius: 15px 15px 0 0;
+    width: 290px;
+    height: 200px;
 }
 
 .project-box i{
