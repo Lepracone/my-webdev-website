@@ -228,10 +228,9 @@ header{
     height: 200px;
 }
 
-.project-box i{
-    color: #66FCF1;
-    font-size: 20px;
-    margin:5px
+.project-stack img{
+    height: 20px;
+    margin: 5px
 }
 
 .project-box-name {
@@ -265,6 +264,11 @@ header{
     pointer-events: none;
     color: white;
     margin: 5px 5px;
+}
+
+.mongo-icon-svg{
+    width:30px;
+    color: #66FCF1;
 }
 /*---Footer---*/
 
