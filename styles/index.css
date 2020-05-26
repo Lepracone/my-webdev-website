@@ -219,6 +219,7 @@ header{
     align-items: center;
     justify-content: center;
     margin:30px;
+    position: relative;
 }
 
 .project-box-image {
@@ -240,6 +241,30 @@ header{
 
 .project-buttons {
     margin: 10px 0;
+}
+
+.project-box-image:hover + p {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+ 
+}
+
+.project-box-image:hover{
+    opacity: 0.1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.project-description{
+    top:0;
+    left: 0;
+    position: absolute;
+    text-justify: inter-word;
+    opacity: 0;
+    pointer-events: none;
+    color: white;
+    margin: 5px 5px;
 }
 /*---Footer---*/
 
