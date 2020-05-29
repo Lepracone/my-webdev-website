@@ -59,6 +59,7 @@ header{
     border-radius:3px;
     padding:2px 6px;
     margin: 0px 10px;
+    width: 120px;
 }
 
 .button-links-jumbotron {
@@ -223,6 +224,7 @@ header{
     justify-content: center;
     margin:30px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .project-box-image {
@@ -246,11 +248,6 @@ header{
     margin: 10px 0;
 }
 
-.project-icons{
-    font-size: 25px;
-    margin:0 5px;
-    color: #66FCF1;
-}
 
 .project-box-image:hover + p {
     opacity: 1;
