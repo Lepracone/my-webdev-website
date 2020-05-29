@@ -59,7 +59,9 @@ header{
     border-radius:3px;
     padding:2px 6px;
     margin: 0px 10px;
-    width: 120px;
+    width: 95px;
+    display: inline-block;
+    text-align: center;
 }
 
 .button-links-jumbotron {
@@ -267,11 +269,11 @@ header{
     top:0;
     left: 0;
     position: absolute;
-    text-justify: inter-word;
+    text-align: justify;
     opacity: 0;
     pointer-events: none;
     color: white;
-    margin: 5px 5px;
+    margin: 10px 10px;
 }
 
 .mongo-icon-svg{
