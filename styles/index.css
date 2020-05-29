@@ -48,7 +48,7 @@ header{
 
 .jumbotron-message h4 {
     font-size: 50px;
-    margin:100px auto 20px;
+    margin:250px auto 20px;
     color: #66FCF1;
 }
 
@@ -69,9 +69,11 @@ header{
     border-radius:3px;
     padding:10px 6px;
     margin: 0px 10px;
+    width: 100px;
 }
 
 .about-me {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     color: #C5C6C7;
@@ -84,7 +86,7 @@ header{
     font-size: 1.6rem;
 }
 .about-me-text{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -230,17 +232,24 @@ header{
 }
 
 .project-stack img{
-    height: 20px;
+    height: 25px;
     margin: 5px
 }
 
 .project-box-name {
     color: #66FCF1;
     margin: 5px 0;
+    font-size: 1.1rem;
 } 
 
 .project-buttons {
     margin: 10px 0;
+}
+
+.project-icons{
+    font-size: 25px;
+    margin:0 5px;
+    color: #66FCF1;
 }
 
 .project-box-image:hover + p {

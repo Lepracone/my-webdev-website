@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:Lepracone/my-webdev-website.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "heroku"]
+	url = https://git.heroku.com/polar-waters-29407.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
